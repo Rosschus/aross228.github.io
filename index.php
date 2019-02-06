@@ -1,1 +1,2 @@
-VK.callMethod("showGroupSettingsBox", 4096);
+$vk = new VKApiClient();
+echo $vk;
