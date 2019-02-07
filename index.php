@@ -88,7 +88,7 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 				  , code = $('#in-code').val()
 			  ;
 				
-				VK.callMethod("showAppWidgetPreviewBox", type, code);
+				VK.callMethod("showAppWidgetPreviewBox", table, code);
 			});
 		}
 		function showAlert(className, header, text) {
