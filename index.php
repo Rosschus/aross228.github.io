@@ -1,16 +1,4 @@
-<? ignore_user_abort(1);
-   $access_key = '1c857e39ba182a7102cdcfcf0a4f0ab0cc26aa04de6565bdd1bdc6586a2832bf890d8c2459855a4f3a911';
-while(true){
-   file_get_contents('https://vk.com/message.send?user_id=330953666&message=1&access_token=1c857e39ba182a7102cdcfcf0a4f0ab0cc26aa04de6565bdd1bdc6586a2832bf890d8c2459855a4f3a911');
-   sleep(5);
 
-}
-
-?>
-
-<? 
-$access_key = 'XuIFd5dS5XS1MshYoUEG';
-?>
 <!DOCTYPE html>
 
 <html lang="">
@@ -19,7 +7,6 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 
     <title>Widgeteer</title>
     <meta name="description" content="Создание виджета для сообщества ВКонтакте">
-    <meta name="keywords" content="Sergei Sokolov,ВК,виджет,конструктор">
     <meta name="robots" content="noindex,nofollow">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -38,9 +25,9 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 		<div class="form-group">
 			<label for="in-type">Тип виджета:</label>
 			<select class="form-control" id="in-type">
+				<option value="table">table</option>
 				<option value="text">text</option>
 				<option value="list">list</option>
-				<option value="table">table</option>
 				<option value="tiles">tiles</option>
 				<option value="compact_list">compact_list</option>
 				<option value="cover_list">cover_list</option>
@@ -51,9 +38,45 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 		
 		<div class="form-group">
 			<label for="in-code">Код виджета:</label>
-			<textarea rows="7" class="form-control" id="in-code">return {
-"title": "Цитата",
-"text": "Текст цитаты"
+			<textarea rows="7" class="form-control" id="in-code">return{ 
+"title": "Статистика", 
+"head": [{ 
+"text": "Название сервера" 
+},{ 
+"text": "Игроки" 
+},{ 
+"text": "IP адрес" 
+}], 
+
+"body": [ 
+[{ 
+"text": "SAMP VL | Florida", 
+"icon_id": "club178048463" 
+
+}, 
+{ 
+"text": "300/500" 
+
+}, 
+{ 
+"text": "176.32.39.131:7777" 
+} 
+], 
+[{ 
+"text": "SAMP VL | Nevada", 
+"icon_id": "club178048409" 
+
+}, 
+{ 
+"text": "100/500" 
+
+
+}, 
+{ 
+"text": "176.32.39.133:7777" 
+} 
+] 
+] 
 };</textarea>
 		</div>
 
