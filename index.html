@@ -28,9 +28,9 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 		<div class="form-group">
 			<label for="in-type">Тип виджета:</label>
 			<select class="form-control" id="in-type">
+				<option value="table">table</option>
 				<option value="text">text</option>
 				<option value="list">list</option>
-				<option value="table">table</option>
 				<option value="tiles">tiles</option>
 				<option value="compact_list">compact_list</option>
 				<option value="cover_list">cover_list</option>
@@ -41,9 +41,45 @@ $access_key = 'XuIFd5dS5XS1MshYoUEG';
 		
 		<div class="form-group">
 			<label for="in-code">Код виджета:</label>
-			<textarea rows="7" class="form-control" id="in-code">return {
-"title": "Цитата",
-"text": "Текст цитаты"
+			<textarea rows="7" class="form-control" id="in-code">return{ 
+"title": "Статистика", 
+"head": [{ 
+"text": "Название сервера" 
+},{ 
+"text": "Игроки" 
+},{ 
+"text": "IP адрес" 
+}], 
+
+"body": [ 
+[{ 
+"text": "SAMP VL | Florida", 
+"icon_id": "club178048463" 
+
+}, 
+{ 
+"text": "300/500" 
+
+}, 
+{ 
+"text": "176.32.39.131:7777" 
+} 
+], 
+[{ 
+"text": "SAMP VL | Nevada", 
+"icon_id": "club178048409" 
+
+}, 
+{ 
+"text": "100/500" 
+
+
+}, 
+{ 
+"text": "176.32.39.133:7777" 
+} 
+] 
+] 
 };</textarea>
 		</div>
 
